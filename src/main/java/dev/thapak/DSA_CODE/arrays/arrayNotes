@@ -1,0 +1,146 @@
+>>> Array is an index based collection of fixed number of homogenous data elements
+
+## 1. Definition
+An **array** in Java is a **static** data structure that stores multiple elements of the **same type** in a **contiguous** memory block.
+
+## 2. Characteristics
+- **Index-Based Collection**: Arrays are collections of fixed-size, homogeneous elements.
+- **Zero-Based Indexing**: The first element is at index `0`, and the last is at `length - 1`.
+- **Fixed Size**: Once created, the array size cannot be changed.
+- **Stored as Objects**: Arrays are objects in Java and can be created using `new` or array literals `{}`.
+- **Memory Allocation**: Elements are stored in contiguous memory, ensuring `O(1)` access time.
+
+## 3. Array Creation
+### a. Using `new` keyword:
+```java
+int[] arr = new int[10]; // Default initialized to 0
+arr[0] = 47;
+arr[1] = 50;
+```
+### b. Using Array Literals:
+```java
+int[] arr = {10, 38, 45, 89};
+```
+### c. Using `new` with Initialization:
+```java
+int[] arr = new int[]{23, 89, 80, 383};
+```
+
+## 4. Array Size Constraints
+- **Valid Size Types**: `byte`, `short`, `char`, `int`.
+- **Maximum Size**: `Integer.MAX_VALUE (2,147,483,647)`.
+- **Negative Size**: Throws `NegativeArraySizeException`.
+- **Zero-Length Array**: Allowed.
+
+## 5. Multidimensional Arrays
+### a. Declaration & Initialization
+```java
+int[][] arr = new int[3][4]; // 3 rows, 4 columns
+```
+### b. Jagged Arrays (Uneven Rows)
+```java
+int[][] jaggedArr = {
+    {1, 2},
+    {3, 4, 5, 6},
+    {7, 8, 9}
+};
+```
+```java
+int[][] jaggedArr = new int[3][]; // Only base size specified
+jaggedArr[0] = new int[2];
+jaggedArr[1] = new int[4];
+jaggedArr[2] = new int[3];
+```
+### c. Multidimensional Array Properties
+- `arr.length` gives **number of rows** (not total elements).
+- Elements are **not contiguous** in memory.
+- Size of further dimensions is optional at declaration.
+
+## 6. Array Operations
+### a. Iteration
+```java
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}
+```
+**Enhanced for-loop:**
+```java
+for (int num : arr) {
+    System.out.println(num);
+}
+```
+
+### b. Assignment Between Arrays
+```java
+int[] a = {1, 2, 3};
+int[] b = a; // Reference assignment, not element copy
+```
+To copy elements:
+```java
+int[] copy = Arrays.copyOf(a, a.length);
+```
+
+### c. Utility Methods (`java.util.Arrays`)
+- `sort()`: Sorts array in ascending order.
+- `parallelSort()`: Multi-threaded sorting.
+- `copyOf()`: Copies the array with specified size.
+- `copyOfRange()`: Copies a range of elements.
+- `equals()`: Compares two arrays.
+- `deepEquals()`: Compares multi-dimensional arrays.
+- `fill()`: Fills array with a specific value.
+- `toString()`: Converts array to string.
+- `deepToString()`: converts multi-dimensional array to string.
+- `binarySearch()`: Searches a sorted array.
+- `stream()`: Converts array to a stream.
+- `asList()`: Converts array to fixed-size `List`.
+- `mismatch()`: Finds the first differing index in two arrays.
+- `hashCode()`: Returns a hash code for a single-dimensional array.
+- `deepHashCode()`: Returns a deep hash code for a multidimensional (nested) array.
+
+## 7. Object Type Arrays
+```java
+Object[] objArr = {10, "Hello", 5.5};
+```
+- **Primitive type arrays**: Accept values promotable to declared type.
+- **Object type arrays**: Accept declared type or its subclasses.
+- **Interface type arrays**: Can store implementing class objects.
+- **Child type arrays** can be assigned to parent type variables.
+
+## 8. Array Behavior
+- **Element Promotions**: Allowed for values but **not at array object level**.
+  ```java
+  char c = 'A';
+  int i = c; // Allowed
+  char[] charArr = {'A', 'B'};
+  int[] intArr = charArr; // Not Allowed
+  ```
+- **Array Assignments**: Type & dimension must match, but sizes can differ.
+- **Var-args Compatibility**: Single-dimensional arrays can replace var-args parameters, but not vice versa.
+  ```java
+  void method(int... nums) {}
+  method(new int[]{1, 2, 3}); // Valid
+  ```
+
+## 9. Common Errors
+- **ArrayIndexOutOfBoundsException**: Accessing out-of-range index.
+- **NegativeArraySizeException**: Declaring an array with a negative size.
+- **NullPointerException**: Accessing elements of an uninitialized array.
+
+## 10. Performance & Use Cases
+| Operation  | Complexity |
+|------------|------------|
+| Access     | `O(1)`    |
+| Search (Linear) | `O(n)` |
+| Search (Binary - Sorted) | `O(log n)` |
+| Insert/Delete (Fixed Size) | `O(n)` |
+| Sorting (QuickSort, MergeSort) | `O(n log n)` |
+
+### Use Cases
+- Storing fixed-size collections.
+- Implementing **stacks, queues, heaps**.
+- Sorting and searching elements efficiently.
+
+## 11. Total Elements in 2D Arrays
+```java
+int totalElements = rows * columns;
+```
