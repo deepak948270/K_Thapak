@@ -1,0 +1,1 @@
+1. Given a list of strings["hello world", "java springBoot", "hi daddy"], split each string by spaces and return a flattened list of all words
