@@ -4,20 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69728e02-5d5c-4150-bc3d-f17f1cf4b001" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="69728e02-5d5c-4150-bc3d-f17f1cf4b001" name="Changes" comment="LC question -&gt; 1, 121 , 217">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/thapak/DSA_CODE/arrays/ContainsDuplicateII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/thapak/DSA_CODE/arrays/MaxProductSubArrayKadanesAlgo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/thapak/DSA_CODE/arrays/MaxSubArrayKadanesAlgo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/thapak/DSA_CODE/arrays/MinInRotatedSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/thapak/DSA_CODE/arrays/ProductOfArrayExceptSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/thapak/DSA_CODE/arrays/arrayQuestions" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/thapak/DSA_CODE/arrays/arrayQuestions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/thapak/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/thapak/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="34ZNqmsqzLM5JIxvSTaeC0soBte" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,11 +40,93 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BestTimeToBuyAndSellStock.executor": "Run",
+    "Application.ContainsDuplicateII.executor": "Run",
+    "Application.MaxProductSubArrayKadanesAlgo.executor": "Run",
+    "Application.MaxSubArrayKadanesAlgo.executor": "Run",
+    "Application.ProductOfArrayExceptSelf.executor": "Run",
+    "Application.TwoSum.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "thapak",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.MinInRotatedSortedArray">
+    <configuration name="ContainsDuplicateII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.thapak.DSA_CODE.arrays.ContainsDuplicateII" />
+      <module name="K_Thapak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.thapak.DSA_CODE.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProductSubArrayKadanesAlgo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.thapak.DSA_CODE.arrays.MaxProductSubArrayKadanesAlgo" />
+      <module name="K_Thapak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.thapak.DSA_CODE.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxSubArrayKadanesAlgo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.thapak.DSA_CODE.arrays.MaxSubArrayKadanesAlgo" />
+      <module name="K_Thapak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.thapak.DSA_CODE.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinInRotatedSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.thapak.DSA_CODE.arrays.MinInRotatedSortedArray" />
+      <module name="K_Thapak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.thapak.DSA_CODE.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductOfArrayExceptSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.thapak.DSA_CODE.arrays.ProductOfArrayExceptSelf" />
+      <module name="K_Thapak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.thapak.DSA_CODE.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MinInRotatedSortedArray" />
+        <item itemvalue="Application.MaxProductSubArrayKadanesAlgo" />
+        <item itemvalue="Application.MaxSubArrayKadanesAlgo" />
+        <item itemvalue="Application.ProductOfArrayExceptSelf" />
+        <item itemvalue="Application.ContainsDuplicateII" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,6 +136,19 @@
       <option name="presentableId" value="Default" />
       <updated>1761417328547</updated>
     </task>
+    <task id="LOCAL-00001" summary="LC question -&gt; 1, 121 , 217">
+      <option name="closed" value="true" />
+      <created>1761429122995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761429122997</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LC question -&gt; 1, 121 , 217" />
+    <option name="LAST_COMMIT_MESSAGE" value="LC question -&gt; 1, 121 , 217" />
   </component>
 </project>
