@@ -1,6 +1,12 @@
 package dev.thapak.DSA_CODE.arrays;
 
 public class MaxSubArrayKadanesAlgo {
+
+    /*
+    * Kadane’s Algorithm says:
+    * At each element, you decide whether to extend the previous subarray(currentSum+nums[i])
+    *  or start a new subarray from the current element(nums[i])
+    * */
     public static void main(String[] args) {
         int [] nums=new int []{-2, 1, -3, 4, -1, 2, 1, -5, 4};
         int maxSumofSubArray = maxSubArray(nums);
