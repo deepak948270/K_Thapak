@@ -6,7 +6,7 @@
 (IMP)6.Maximum sum SubArray  (Kadane's Algorithm)  (LC-53)
 7. maximum product subArray (variation of Kadane’s Algorithm) (LC-152)
 8. find minimum in sorted rotated array (LC-153)
-9. search in the rotated sorted array (LC-33)
+9. search in the rotated sorted array(binary sort)or ? (LC-33)
 10. two sum II (LC-167)
 11. 3 sum (LC-15)
 12. merge sorted array (LC-88)
