@@ -1,5 +1,6 @@
 package dev.thapak.DSA_CODE.arrays;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class ValidAnagram {
@@ -11,6 +12,21 @@ public class ValidAnagram {
         System.out.println(isAnagram);
 
     }
+
+    public boolean isAnagram3(String s, String t) {
+
+        if (s.length() != t.length()) return false;
+
+        char[] sArr = s.toCharArray();
+        char[] tArr = t.toCharArray();
+
+        Arrays.sort(sArr);
+        Arrays.sort(tArr);
+
+        return Arrays.equals(sArr, tArr);
+
+    }
+
 
 
     public static boolean isAnagram2(String s, String t) {
